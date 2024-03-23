@@ -59,6 +59,7 @@ PLATFORMS = [
     Platform.FAN,
     Platform.HUMIDIFIER,
     Platform.LIGHT,
+    Platform.LOCK,
     Platform.NUMBER,
     Platform.SCENE,
     Platform.SELECT,
@@ -368,6 +369,8 @@ class DPCode(StrEnum):
     WIRELESS_ELECTRICITY = "wireless_electricity"
     WORK_MODE = "work_mode"  # Working mode
     WORK_POWER = "work_power"
+    M15_WIFI_01_LOCK_STATE = "lock_motor_state"
+    M15_WIFI_01_BATTERY_PERCENTAGE = "residual_electricity"
 
 
 @dataclass

@@ -899,6 +899,17 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             entity_category=EntityCategory.DIAGNOSTIC,
         ),
     ),
+    "jtmsbh": (
+        TuyaSensorEntityDescription(
+            key=DPCode.M15_WIFI_01_BATTERY_PERCENTAGE,
+            translation_key="battery",
+            device_class=SensorDeviceClass.BATTERY,
+            native_unit_of_measurement=PERCENTAGE,
+            state_class=SensorStateClass.MEASUREMENT,
+            entity_category=EntityCategory.DIAGNOSTIC,
+            icon="mdi:battery-lock",
+        ),
+    ),
     # Humidifier
     # https://developer.tuya.com/en/docs/iot/s?id=K9gf48qwjz0i3
     "jsq": (
